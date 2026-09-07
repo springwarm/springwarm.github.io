@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- FR-SITE-05 / TD §13.4.7: meta CSP; GitHub Pages cannot set full response headers. -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests"
+    />
+    <title>MarkNote · 你的笔记，不该认主人</title>
+    <meta
+      name="description"
+      content="零服务端 Markdown 笔记本。纯 .md 存进你自己的 Git 仓库，凭据只留系统钥匙串，离线也能写。"
+    />
+    <link rel="canonical" href="https://springwarm.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:url" content="https://springwarm.github.io/" />
+    <meta property="og:title" content="MarkNote · 你的笔记，不该认主人" />
+    <meta
+      property="og:description"
+      content="零服务端 Markdown 笔记本。纯 .md 存进你自己的 Git 仓库，凭据只留系统钥匙串。"
+    />
+    <meta property="og:image" content="https://springwarm.github.io/og/brand-story.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MarkNote · 你的笔记，不该认主人" />
+    <meta
+      name="twitter:description"
+      content="零服务端 Markdown 笔记本。纯 .md 存进你自己的 Git 仓库。"
+    />
+    <meta name="twitter:image" content="https://springwarm.github.io/og/brand-story.png" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="theme-color" content="#5d4a78" />
+    <script type="module" crossorigin src="/assets/index-0miIntwQ.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BHtW98U-.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="/">
+          <img src="/wolf-head.webp" width="28" height="28" alt="" />
+          <span>MarkNote</span>
+        </a>
+        <nav class="nav" aria-label="页面导航">
+          <a href="#story">故事</a>
+          <a href="#proof">证据</a>
+          <a href="#download">下载</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section section--tight" aria-labelledby="hero-title">
+        <div class="section__inner hero">
+          <div class="hero__copy">
+            <p class="section__eyebrow">跨端 Markdown 笔记本</p>
+            <h1 id="hero-title">你的笔记，不该认主人。</h1>
+            <p class="lead">
+              纯 Markdown，只住你自己的 Git 仓库。零服务端、零订阅、零第三方追踪。客户端直连
+              Gitee / GitHub / GitLab。
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn-primary" href="#download">下载 MarkNote</a>
+              <a class="btn btn-ghost" href="#story">看看它如何工作</a>
+            </div>
+          </div>
+          <div class="hero__visual" aria-hidden="true">
+            <picture>
+              <source srcset="/wolf-head.webp" type="image/webp" />
+              <img
+                src="/wolf-head.png"
+                width="320"
+                height="320"
+                alt=""
+                fetchpriority="high"
+                decoding="async"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="story" aria-labelledby="pain-title" data-reveal>
+        <div class="section__inner">
+          <p class="section__eyebrow">为什么需要逃离</p>
+          <h2 id="pain-title">你写下的内容，真的属于你吗？</h2>
+          <p class="lead">很多笔记工具把内容锁进私有格式和对方的云。迁出困难，订阅一停，同步就断。</p>
+          <div class="pain-grid">
+            <article class="card">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2" />
+                <path d="M9 9h6M9 13h4" />
+              </svg>
+              <h3>私有格式</h3>
+              <p>笔记打不开，换工具先要过一遍导出迷宫。</p>
+            </article>
+            <article class="card">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v18" />
+                <path d="M5 10h14" />
+                <path d="M7 17h10" />
+              </svg>
+              <h3>订阅绑定</h3>
+              <p>免费额度收紧后，跨设备同步往往变成付费门槛。</p>
+            </article>
+            <article class="card">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 7h16v10H4z" />
+                <path d="M8 11h8" />
+              </svg>
+              <h3>迁移成本</h3>
+              <p>服务调整或停运时，几年积累会变成一场冒险。</p>
+            </article>
+            <article class="card">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="8" height="12" rx="1" />
+                <rect x="13" y="8" width="8" height="12" rx="1" />
+              </svg>
+              <h3>跨端割裂</h3>
+              <p>桌面功能齐，手机却残缺；同一份笔记两套体验。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="stance-title" data-reveal>
+        <div class="section__inner stance">
+          <img class="stance__mark" src="/wolf-head.webp" width="144" height="144" alt="" decoding="async" />
+          <div>
+            <p class="section__eyebrow">品牌立场</p>
+            <h2 id="stance-title">所以，我们选择不寄人篱下。</h2>
+            <p class="lead">
+              MarkNote 起源于一次逃离：作者长期使用印象笔记，内容锁在厂商格式与云端，订阅越来越贵，想迁走却无从下手。
+              品牌是一匹狼，因为狼不认主人——你的笔记也不该认。
+            </p>
+            <p class="prose">
+              MarkNote 不经营你的数据，也不另起一套账号体系。它是纯客户端，连接你的设备和你自己的 Git 仓库。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="pillar-title" data-reveal>
+        <div class="section__inner">
+          <p class="section__eyebrow">三根支柱</p>
+          <h2 id="pillar-title">巢穴、牵绳、回家的路</h2>
+          <div class="pillar-grid">
+            <article class="card pillar">
+              <h3>自己的巢穴</h3>
+              <p>数据主权：笔记是纯 <code>.md</code>，只存你自己的 Git 仓库。</p>
+              <p class="fact">随时 <code>git clone</code>，用任意编辑器打开。没有厂商私有格式，就没有锁定。</p>
+            </article>
+            <article class="card pillar">
+              <h3>没有牵绳</h3>
+              <p>自由：零自建服务端、零订阅、零第三方追踪。</p>
+              <p class="fact">Git PAT 与 AI Key 只存本机系统钥匙串，不进仓库、设置文件或日志。</p>
+            </article>
+            <article class="card pillar">
+              <h3>认得回家的路</h3>
+              <p>不丢：断网先写本地，联网后自动补推。</p>
+              <p class="fact">冲突保留副本，删除先进回收站。数据不丢是硬红线。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="proof" aria-labelledby="proof-title" data-reveal>
+        <div class="section__inner">
+          <p class="section__eyebrow">产品证据</p>
+          <h2 id="proof-title">打开仓库，就是全部真相。</h2>
+          <p class="lead">
+            停用 MarkNote 之后，笔记正文仍是普通 Markdown。本页托管仓和更新分发仓只负责宣传与安装包，不是你的笔记存储位置。
+          </p>
+          <div class="evidence">
+            <pre class="tree" tabindex="0" aria-label="笔记仓库目录样例"><code><span class="c-ok">your-repository/</span>
+├── <span class="c-accent">notes/</span>                 <span class="c-muted"># 人类可读的 .md 正文</span>
+│   ├── 工作记录.md
+│   └── 读书笔记.md
+├── <span class="c-accent">assets/</span>                <span class="c-muted"># 图片与附件</span>
+└── <span class="c-accent">.marknote/</span>             <span class="c-muted"># 配置 / 回收站 / 冲突副本 / 可重建索引</span>
+    ├── config.json
+    ├── trash/
+    ├── conflict/
+    └── index/</code></pre>
+            <ul class="legend">
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
+                  <path d="M14 3v6h6" />
+                </svg>
+                <div>
+                  <strong>notes/ 是正文</strong>
+                  <span>只放人类可读的纯 Markdown 与 front-matter。</span>
+                </div>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 7h16v12H4z" />
+                  <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+                </svg>
+                <div>
+                  <strong>.marknote/ 不是正文仓</strong>
+                  <span>放配置、回收站、冲突副本和可重建索引；丢失可从笔记重建索引。</span>
+                </div>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M8 12l2.5 2.5L16 9" />
+                </svg>
+                <div>
+                  <strong>Git 历史可追溯</strong>
+                  <span>提交记录跟着仓库走；换设备只要 clone / pull。</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="scene-title" data-reveal>
+        <div class="section__inner">
+          <p class="section__eyebrow">使用场景</p>
+          <h2 id="scene-title">写下来，带走，再取回。</h2>
+          <div class="scene-grid">
+            <article class="card">
+              <h3>1. 写下</h3>
+              <p>所见即所得编辑 Markdown，保存后进入你的 Git 仓库。</p>
+            </article>
+            <article class="card">
+              <h3>2. 继续</h3>
+              <p>另一台设备登录同一仓库，pull 后接着写。断网也能先落本地。</p>
+            </article>
+            <article class="card">
+              <h3>3. 取回</h3>
+              <p>任何时候用 git 或其他编辑器打开同一份 <code>.md</code>，不依赖 MarkNote。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="download" aria-labelledby="download-title" data-reveal>
+        <div class="section__inner">
+          <p class="section__eyebrow">开始使用</p>
+          <h2 id="download-title">下载 MarkNote</h2>
+          <p class="lead">
+            桌面端通过自动更新通道分发。安装包列表来自公开更新清单；若清单暂无用户安装器，请走下方兜底链接。
+          </p>
+          <div class="download-panel">
+            <div class="download-panel__meta">
+              <p class="download-panel__version" data-download-version>当前版本待清单确认</p>
+            </div>
+            <p class="download-panel__status" data-download-status>
+              正在读取公开版本清单。若长时间无响应，请使用下方链接。
+            </p>
+            <div class="download-list" data-download-list></div>
+            <div class="download-fallback">
+              <a
+                class="btn btn-ghost"
+                href="https://springwarm.github.io/marknote-updates/"
+                rel="noopener noreferrer"
+              >
+                查看全部版本
+              </a>
+              <a
+                class="btn btn-ghost"
+                href="https://github.com/springwarm/marknote"
+                rel="noopener noreferrer"
+              >
+                源码仓库
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section closing" aria-labelledby="close-title" data-reveal>
+        <div class="section__inner">
+          <h2 id="close-title">你的巢穴，你自己说了算。</h2>
+          <p class="lead">没有中间商，没有管理员，也没有「服务停止」的公告。</p>
+          <div class="hero__actions hero__actions--center">
+            <a class="btn btn-primary" href="#download">回到下载</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <picture class="site-footer__mascot" aria-hidden="true">
+        <source srcset="/mascot-cutout.webp" type="image/webp" />
+        <img src="/mascot-cutout.png" width="280" height="360" alt="" decoding="async" loading="lazy" />
+      </picture>
+      <div class="site-footer__inner">
+        <nav aria-label="页脚链接">
+          <a href="https://github.com/springwarm/marknote" rel="noopener noreferrer">源码</a>
+          <a href="https://github.com/springwarm/marknote-updates" rel="noopener noreferrer">更新分发</a>
+          <a href="#proof">数据如何保存</a>
+        </nav>
+        <p>
+          本站是纯静态页，不使用遥测、广告或第三方脚本，也不写 cookie。访问由 GitHub Pages
+          托管，GitHub 可能按其隐私政策记录访问日志。
+        </p>
+        <p>MIT · MarkNote Contributors</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
