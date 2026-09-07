@@ -34,8 +34,8 @@
     <meta name="twitter:image" content="https://springwarm.github.io/og/brand-story.png" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="theme-color" content="#5d4a78" />
-    <script type="module" crossorigin src="/assets/index-0miIntwQ.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BHtW98U-.css">
+    <script type="module" crossorigin src="/assets/index-Zpn7J7hn.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-cGkxRrQt.css">
   </head>
   <body>
     <a class="skip-link" href="#main">跳到正文</a>
@@ -61,8 +61,8 @@
             <p class="section__eyebrow">跨端 Markdown 笔记本</p>
             <h1 id="hero-title">你的笔记，不该认主人。</h1>
             <p class="lead">
-              纯 Markdown，只住你自己的 Git 仓库。零服务端、零订阅、零第三方追踪。客户端直连
-              Gitee / GitHub / GitLab。
+              纯 Markdown，只住你自己的 Git 仓库。零服务端、零订阅、零第三方追踪。客户端直连你选择的 Git
+              托管平台。
             </p>
             <div class="hero__actions">
               <a class="btn btn-primary" href="#download">下载 MarkNote</a>
@@ -135,11 +135,12 @@
             <p class="section__eyebrow">品牌立场</p>
             <h2 id="stance-title">所以，我们选择不寄人篱下。</h2>
             <p class="lead">
-              MarkNote 起源于一次逃离：作者长期使用印象笔记，内容锁在厂商格式与云端，订阅越来越贵，想迁走却无从下手。
+              MarkNote 起源于一次逃离：作者长期把笔记锁在厂商私有格式与云端，订阅越来越贵，想迁走却无从下手。
               品牌是一匹狼，因为狼不认主人——你的笔记也不该认。
             </p>
             <p class="prose">
-              MarkNote 不经营你的数据，也不另起一套账号体系。它是纯客户端，连接你的设备和你自己的 Git 仓库。
+              MarkNote 不经营你的数据，也不另起一套账号体系。它是纯客户端，连接你的设备和你自己的 Git
+              托管仓库。
             </p>
           </div>
         </div>
@@ -158,7 +159,7 @@
             <article class="card pillar">
               <h3>没有牵绳</h3>
               <p>自由：零自建服务端、零订阅、零第三方追踪。</p>
-              <p class="fact">Git PAT 与 AI Key 只存本机系统钥匙串，不进仓库、设置文件或日志。</p>
+              <p class="fact">Git 凭据与 AI Key 只存本机系统钥匙串，不进仓库、设置文件或日志。</p>
             </article>
             <article class="card pillar">
               <h3>认得回家的路</h3>
@@ -179,11 +180,13 @@
           <div class="evidence">
             <pre class="tree" tabindex="0" aria-label="笔记仓库目录样例"><code><span class="c-ok">your-repository/</span>
 ├── <span class="c-accent">notes/</span>                 <span class="c-muted"># 人类可读的 .md 正文</span>
-│   ├── 工作记录.md
-│   └── 读书笔记.md
+│   ├── 01932f4e-8b2a-7c3d-9e1f-2a4b6c8d0e1f.md
+│   └── work/
+│       └── 01932f4f-1c90-7a11-8d22-3b5c7d9e0f2a.md
 ├── <span class="c-accent">assets/</span>                <span class="c-muted"># 图片与附件</span>
 └── <span class="c-accent">.marknote/</span>             <span class="c-muted"># 配置 / 回收站 / 冲突副本 / 可重建索引</span>
     ├── config.json
+    ├── tags-index.json
     ├── trash/
     ├── conflict/
     └── index/</code></pre>
@@ -195,7 +198,7 @@
                 </svg>
                 <div>
                   <strong>notes/ 是正文</strong>
-                  <span>只放人类可读的纯 Markdown 与 front-matter。</span>
+                  <span>只放人类可读的纯 Markdown 与 front-matter；新建用 UUIDv7 文件名，标题写在首行 H1。</span>
                 </div>
               </li>
               <li>
@@ -205,7 +208,7 @@
                 </svg>
                 <div>
                   <strong>.marknote/ 不是正文仓</strong>
-                  <span>放配置、回收站、冲突副本和可重建索引；丢失可从笔记重建索引。</span>
+                  <span>放配置、回收站、冲突副本和可重建索引（含 tags-index）；丢失可从笔记重建。</span>
                 </div>
               </li>
               <li>
